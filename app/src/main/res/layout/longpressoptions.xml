@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtEffivs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnVzajemneZapasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vzájemné zápasy" />
+
+        <Button
+            android:id="@+id/btnLokalizovatHriste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokalizuj hřiště" />
+
+        <TextView
+            android:id="@+id/txtPredpokladanaSestava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sestava:" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\nZapsat účast na tomto zápase"
+            tools:layout_editor_absoluteX="273dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBudu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Budu" />
+
+            <Button
+                android:id="@+id/btnNebudu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nebudu" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zapasysoupere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zobrazit zápasy soupeře" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

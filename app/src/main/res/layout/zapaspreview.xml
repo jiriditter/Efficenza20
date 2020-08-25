@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_souperi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/kruh"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSouperi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Přemýšlím..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sestava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/kruh"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSestava"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Přemýšlím..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_goly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/kruh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtGoly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Přemýšlím..." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_asistence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/kruh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAsist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Přemýšlím..." />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_karty"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/kruh"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKarty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Přemýšlím..." />
+
+                    <TextView
+                        android:id="@+id/txtMuzZapasu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Přemýšlím..." />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/kruh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKomentar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Přemýšlím..." />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

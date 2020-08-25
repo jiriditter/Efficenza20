@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/NadchazejiciZapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgPocasicko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPocasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SezonaPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PZzapocetdnu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+
+            <TextView
+                android:id="@+id/PZSouper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_hriste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PZHriste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+
+            <TextView
+                android:id="@+id/PZDatum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+
+            <TextView
+                android:id="@+id/PZCas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pracuju..." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@color/submenu"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_menu"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btn_forum"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btn_standing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btn_stats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/forum_and" />
+
+                    <ImageView
+                        android:id="@+id/btn_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/refresh_and" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="bottom|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_akt_sezona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/LAYprehledZapasu"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

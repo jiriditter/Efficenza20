@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Efficenza 2.0</string>
+    <string name="Uzivatel">Uživatel</string>
+    <string name="Heslo">Heslo   </string>
+    <string name="prihlasitse">Přihlásit se</string>
+    <string name="menu">MENU</string>
+    <string name="forum">FORUM</string>
+    <string name="dalsizapas">Příští zápas</string>
+    <string name="vychozisezona">Výchozí sezóna</string>
+    <string name="udajepro">Přihlašovací údaje pro forum</string>
+    <string name="pridejmizapasy">Přidej mi zápasy do kalendáře</string>
+    <string name="txtSave">Ulož</string>
+    <string name="txtCancel">Zruš</string>
+    <string name="txtPouzij">Použij</string>
+    <string name="txtDoKterehoKalendare">Zvol kalendář, kam ti zapíšu zápasy</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="zadej_text">Zadej text</string>
+    <string name="odeslat">Odeslat</string>
+    <string name="channel_name">AC Efficenza</string>
+</resources>
