@@ -6,52 +6,62 @@
     <TableLayout
         android:id="@+id/standings"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="5dp">
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#89c403"
+            >
 
             <TextView
                 android:id="@+id/Pozice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/Tym"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/GF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/GA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/VRP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/Odeh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/PTS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ffffff"
                 android:text="TextView" />
         </TableRow>
 

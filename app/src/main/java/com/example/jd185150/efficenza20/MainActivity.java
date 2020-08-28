@@ -217,11 +217,11 @@ public class MainActivity extends AppCompatActivity {
             //HTTP_getTeamDetails hAt = new HTTP_getTeamDetails(this);
             //hAt.execute();
         }
-        _menu.setImageResource(R.drawable.settings_and);
-        _forum.setImageResource(R.drawable.forum_and);
-        _standings.setImageResource(R.drawable.standings_and);
-        _stats.setImageResource(R.drawable.statistics_and);
-        _refresh.setImageResource(R.drawable.refresh_and);
+        _menu.setImageResource(R.drawable.settings);
+        _forum.setImageResource(R.drawable.forum);
+        _standings.setImageResource(R.drawable.standings);
+        _stats.setImageResource(R.drawable.statistics);
+        _refresh.setImageResource(R.drawable.refresh);
 
         _refresh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -282,6 +282,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("UVODNISTRANKA", "nacetl jsem " + s1[0] + " " + s1[1]);
         String cast = "";
         if(s1[0] != null) {
+            Log.d("UVODNISTRANKA", "s1[0] neni null, ale je >> " + s1[0] + " " + s1[1]);
             if (s1[0].equals("1")) cast = "jaro";
             else cast = "podzim";
             tv_aktsezona.setText(cast + " " + s1[1]);

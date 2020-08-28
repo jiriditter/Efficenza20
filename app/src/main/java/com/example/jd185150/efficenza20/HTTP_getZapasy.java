@@ -70,9 +70,9 @@ public class HTTP_getZapasy extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.d("HTTP_getZapasy", s);
         if((s != null) && (!s.isEmpty())) {
             try {
+                Log.d("HTTP_getZapasy", s);
                 JSONArray JArda = new JSONArray(s);
                 jAsan.setData(JArda); //zapis globalni zapasy
                 int count = JArda.length();

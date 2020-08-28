@@ -196,6 +196,7 @@ public class myCalendar {
         //datum = "7.5.2018 16:00";
     }
 
+    @SuppressLint("MissingPermission")
     private void pridejSingleZaznam(ArrayList<String> a) {
         try {
             ContentResolver cr = akt.getContentResolver();
@@ -244,31 +245,25 @@ public class myCalendar {
 
                 if (prava.hasPermission(Manifest.permission.WRITE_CALENDAR)) {
                     //add reminder
-                    if (ActivityCompat.checkSelfPermission(akt, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
-                        // TODO: Consider calling
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
-                        Uri uri = cr.insert(CalendarContract.Events.CONTENT_URI, values);
+                    //if (ActivityCompat.checkSelfPermission(akt, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
+                        Log.v("_Calendar", "mam prava pro zapis");
+                        @SuppressLint("MissingPermission") Uri uri = cr.insert(CalendarContract.Events.CONTENT_URI, values);
                         long eventId = new Long(uri.getLastPathSegment());
                         values.clear();
                         values.put(CalendarContract.Reminders.MINUTES, 120);
                         values.put(CalendarContract.Reminders.EVENT_ID, eventId);
                         values.put(CalendarContract.Reminders.METHOD, CalendarContract.Reminders.METHOD_ALERT);
                         uri = cr.insert(CalendarContract.Reminders.CONTENT_URI, values);
-                        Log.v("_Calendar", "Udalost zapsana");
                         pridanozapasu++;
+                    Log.v("_Calendar", "Udalost zapsana (#" + pridanozapasu + ")");
                         return;
-                    }
+                    //} else Log.v("_Calendar", "Nemam prava zapisovat do kalendare");
                 } else Log.v("_Calendar", "Nemam prava zapisovat do kalendare");
             }
         } catch(Exception e){
                 Log.d("KUWA KUWA", "Samsink is wronk");
                 e.printStackTrace();
             }
-        Toast.makeText(akt, "Přidal jsem celkem " + pridanozapasu + " zápasů", Toast.LENGTH_SHORT).show();
+        Toast.makeText(akt, "Zapsal jsem ti " + pridanozapasu + " zápasů", Toast.LENGTH_SHORT).show();
     }
 }

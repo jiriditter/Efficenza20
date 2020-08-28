@@ -111,33 +111,41 @@
                         android:id="@+id/btn_menu"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_weight="1" />
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tlacitko_states" />
 
                     <ImageView
                         android:id="@+id/btn_forum"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_weight="1" />
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tlacitko_states" />
 
                     <ImageView
                         android:id="@+id/btn_standing"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_weight="1" />
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tlacitko_states" />
 
                     <ImageView
                         android:id="@+id/btn_stats"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/forum_and" />
+                        android:background="@drawable/tlacitko_states" />
 
                     <ImageView
                         android:id="@+id/btn_refresh"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/refresh_and" />
+                        android:background="@drawable/tlacitko_states" />
 
                 </LinearLayout>
             </ScrollView>

@@ -79,6 +79,7 @@ public class HTTP_fetchSezonaList extends AsyncTask<String, Void, String> {
 
         try {
             url = new URL(cfg.getURL_fetchsezona());
+            Log.d("HTTP_fetchSezonaList", "URL = " + cfg.getURL_fetchsezona());
             con = (HttpURLConnection) url.openConnection();
             con.setDoInput(true);
             con.setDoOutput(true);
@@ -111,14 +112,17 @@ public class HTTP_fetchSezonaList extends AsyncTask<String, Void, String> {
                 switch (prep) {
                     case 0:
                         //chci jenom posledni sezonu
+                        Log.d("HTTP_fetchSezonaList", "result = " + result);
                         JSONObject obj = jsonArray.getJSONObject(0);
                         String rok = obj.getString("rok");
                         String cast = obj.getString("cast");
+                        String liga = obj.getString("liga");
+                        String skupina = obj.getString("skupina");
                         Log.d("HTTP_fetchSezonaList", "wratilo se mi: " + cast + " " + rok);
-                        //shp = new sharedPref(akt);
+                        shp = new sharedPref(akt);
                         Log.d("HTTP_fetchSezonaList", "Zapisuju sharedprefs: " + cast + " " + rok);
                         //"https://api.psmf.zlutazimnice.cz/api/v1/teams-by-name?name=efficenza%20&token&year=" + rok;
-                        //shp.zapisSezonu(cast, rok, "kuwa", "kuwa", "kuwa");
+                        shp.zapisSezonu(cast, rok, "1", skupina, liga);
                         int qa;
                         if (cast.equals("jaro")) qa =1; else qa =2;
                         HTTP_getTeamDetails HgTD = new HTTP_getTeamDetails(akt, qa, Integer.parseInt(rok), true);
