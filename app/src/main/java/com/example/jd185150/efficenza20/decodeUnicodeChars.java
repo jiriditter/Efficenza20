@@ -100,85 +100,282 @@ public class decodeUnicodeChars {
             msg.replace(location, location+1, " ");
         }
 
-        if(msg.toString().contains(":-D")) {
-            int indOf = msg.toString().indexOf(":-D");
+        if(msg.toString().contains("=-)")) {
+            //laughing to cry
+            int indOf = msg.toString().indexOf("=-)");
             Log.d("--EMOJI", "message: " + message);
             Log.d("--EMOJI", "indexof :-D :: " + indOf);
-            Drawable android = context.getResources().getDrawable(R.drawable.smiley2);
-            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
-            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
-            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-        }
-
-        if(msg.toString().contains(":-)")) {
-            int indOf = msg.toString().indexOf(":-)");
-            Log.d("--EMOJI", "message: " + msg.toString());
-            Log.d("--EMOJI", "indexof :-) :: " + indOf);
             Drawable android = context.getResources().getDrawable(R.drawable.smiley1);
-            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
-            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
-            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-        }
-
-        if(msg.toString().contains(";-)")) {
-            int indOf = msg.toString().indexOf(";-)");
-            Log.d("--EMOJI", "message: " + message);
-            Log.d("--EMOJI", "indexof ;-) :: " + indOf);
-            Drawable android = context.getResources().getDrawable(R.drawable.smiley6);
-            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
-            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
-            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-        }
-
-        if(msg.toString().contains(":-(")) {
-            int indOf = msg.toString().indexOf(":-(");
-            Log.d("--EMOJI", "message: " + message);
-            Log.d("--EMOJI", "indexof :-( :: " + indOf);
-            Drawable android = context.getResources().getDrawable(R.drawable.smiley7);
-            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
-            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
-            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-        }
-
-        if(msg.toString().contains(":-*")) {
-            int indOf = msg.toString().indexOf(":-*");
-            Log.d("--EMOJI", "message: " + message);
-            Log.d("--EMOJI", "indexof :-* :: " + indOf);
-            Drawable android = context.getResources().getDrawable(R.drawable.smiley4);
             android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
             ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
             msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         }
 
         if(msg.toString().contains(":-P")) {
+            //wink
             int indOf = msg.toString().indexOf(":-P");
+            Log.d("--EMOJI", "message: " + msg.toString());
+            Log.d("--EMOJI", "indexof :-) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley2);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":-(")) {
+            //sad
+            int indOf = msg.toString().indexOf(":-(");
             Log.d("--EMOJI", "message: " + message);
-            Log.d("--EMOJI", "indexof :-P :: " + indOf);
+            Log.d("--EMOJI", "indexof ;-) :: " + indOf);
             Drawable android = context.getResources().getDrawable(R.drawable.smiley3);
             android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
             ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
             msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         }
 
-        if(msg.toString().contains("8-)")) {
-            int indOf = msg.toString().indexOf("8-)");
+        if(msg.toString().contains("[-(")) {
+            //dunno man!
+            int indOf = msg.toString().indexOf("[-(");
             Log.d("--EMOJI", "message: " + message);
-            Log.d("--EMOJI", "indexof 8-) :: " + indOf);
+            Log.d("--EMOJI", "indexof :-( :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley4);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("|-(")) {
+            //close to crying
+            int indOf = msg.toString().indexOf("|-(");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :-* :: " + indOf);
             Drawable android = context.getResources().getDrawable(R.drawable.smiley5);
             android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
             ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
             msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         }
 
-        if(msg.toString().contains(":)")) {
-            int indOf = msg.toString().indexOf(":)");
+        if(msg.toString().contains(":=)")) {
+            //yummy!
+            int indOf = msg.toString().indexOf(":=)");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :-P :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley6);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("[-|")) {
+            //Luis de Funes semsemikoukejte
+            int indOf = msg.toString().indexOf("[-|");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof 8-) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley7);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":-[")) {
+            //Luis de Funes tamsekoukejte
+            int indOf = msg.toString().indexOf(":-[");
             Log.d("--EMOJI", "message: " + message);
             Log.d("--EMOJI", "indexof :) :: " + indOf);
-            Drawable android = context.getResources().getDrawable(R.drawable.smiley1);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley8);
             android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
             ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
             msg.setSpan(image, indOf, indOf+2, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
         }
+
+        if(msg.toString().contains("8-O")) {
+            //in awe!
+            int indOf = msg.toString().indexOf("8-O");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley9);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("=O")) {
+            //crying hard
+            int indOf = msg.toString().indexOf("=O");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley10);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+2, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("*NO")) {
+            //#11 nope man
+            int indOf = msg.toString().indexOf("*NO");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley11);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("*OK")) {
+            //OK
+            int indOf = msg.toString().indexOf("*OK");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley13);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("X-X")) {
+            //sick
+            int indOf = msg.toString().indexOf("X-X");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley12);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":-/")) {
+            //sad
+            int indOf = msg.toString().indexOf(":-/");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley14);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("*SRY")) {
+            //I am sorry
+            int indOf = msg.toString().indexOf("*SRY");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley15);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+4, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":||")) {
+            //shutting up *zipped
+            int indOf = msg.toString().indexOf(":||");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley16);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":-S")) {
+            //sssssh!!!!
+            int indOf = msg.toString().indexOf(":-S");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley17);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("P-/")) {
+            //facepalm
+            int indOf = msg.toString().indexOf("P-/");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley18);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("3-(")) {
+            //angry
+            int indOf = msg.toString().indexOf("3-(");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley19);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("[[)")) {
+            //hehehe
+            int indOf = msg.toString().indexOf("[[)");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley20);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("[-L")) {
+            //tongue out
+            int indOf = msg.toString().indexOf("[-L");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley21);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains(":-E")) {
+            //vysmatej
+            int indOf = msg.toString().indexOf(":-E");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley22);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("8oO")) {
+            //waaaat???
+            int indOf = msg.toString().indexOf("8oO");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley23);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        //bonusovy
+        if(msg.toString().contains(":~Z")) {
+            //Zleman
+            int indOf = msg.toString().indexOf(":~Z");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley24);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(msg.toString().contains("[-]")) {
+            //Pitscha
+            int indOf = msg.toString().indexOf("[-]");
+            Log.d("--EMOJI", "message: " + message);
+            Log.d("--EMOJI", "indexof :) :: " + indOf);
+            Drawable android = context.getResources().getDrawable(R.drawable.smiley25);
+            android.setBounds(0, 0, android.getIntrinsicWidth(), android.getIntrinsicHeight());
+            ImageSpan image = new ImageSpan(android, ImageSpan.ALIGN_BASELINE);
+            msg.setSpan(image, indOf, indOf+3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
         return msg;
     }
 }

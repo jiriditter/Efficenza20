@@ -38,9 +38,9 @@ public class HTTP_getNextMatch extends AsyncTask<String, Void, String> {
     private HTTP_vzajemnaBilance bilance;
 
     public HTTP_getNextMatch(String web, Activity a) {
-        this.SUrl = web.toString();
+        this.SUrl = web.toString().replaceAll(" ", "%20");
         this.akt = a;
-        Log.d("HTTP_getNextMatch", "moje URL je " + web.toString());
+        Log.d("HTTP_getNextMatch", "moje URL je " + SUrl);
     }
 
     @Override
@@ -75,6 +75,7 @@ public class HTTP_getNextMatch extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+        Log.d("HTTP_getNextMatch", "RESULT je " + result);
         JSONArray jsonArray = null;
         Boolean asponjedenodehranej = false;
         final TextView TVsouper = (TextView) ((Activity) akt).findViewById(R.id.PZSouper);

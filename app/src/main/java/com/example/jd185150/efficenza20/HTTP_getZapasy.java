@@ -31,8 +31,8 @@ public class HTTP_getZapasy extends AsyncTask<String, Void, String> {
     private Activity ctx;
 
     public HTTP_getZapasy (String web, Activity c) {
-        this.SUrl = web.toString();
-        Log.d("HTTP_getZapasy", "Volam URL = " + web.toString());
+        this.SUrl = web.toString().replaceAll(" ", "%20");;
+        Log.d("HTTP_getZapasy", "Volam URL = " + SUrl);
         this.ctx = c;
         jAsan = new JSONZapasy_handler(c);
     }

@@ -122,7 +122,13 @@ public class HTTP_fetchSezonaList extends AsyncTask<String, Void, String> {
                         shp = new sharedPref(akt);
                         Log.d("HTTP_fetchSezonaList", "Zapisuju sharedprefs: " + cast + " " + rok);
                         //"https://api.psmf.zlutazimnice.cz/api/v1/teams-by-name?name=efficenza%20&token&year=" + rok;
-                        shp.zapisSezonu(cast, rok, "1", skupina, liga);
+                        switch(cast) {
+                            case "jaro": shp.zapisSezonu("1", rok, "1", skupina, liga);
+                            break;
+                            case "podzim": shp.zapisSezonu("2", rok, "1", skupina, liga);
+                            break;
+                        }
+
                         int qa;
                         if (cast.equals("jaro")) qa =1; else qa =2;
                         HTTP_getTeamDetails HgTD = new HTTP_getTeamDetails(akt, qa, Integer.parseInt(rok), true);
